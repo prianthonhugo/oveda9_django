@@ -9,7 +9,7 @@ class Comment(models.Model):
     users = models.ForeignKey(Users, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.users}' - {self.text_comment}
+        return f'{self.users} - {self.text_comment}'
 
 # photo models
 class Photos(models.Model):
